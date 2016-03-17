@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class Person {
+    
+    var firstName: String?
+    var lastName: String?
+
+    func fullName() -> String {
+        if let fName = self.firstName {
+            if let lName = self.lastName {
+                return fName + lName
+            } else {
+                return fName
+            }
+        } else {
+            return ""
+        }
+    }
+    
+}
